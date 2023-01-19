@@ -5,6 +5,7 @@ k = 1;
 a = x;
 x = x + y;
 y = a + 2*y;
+
 while x~=1 && y~=1
     k = k+1;
     if x > m
