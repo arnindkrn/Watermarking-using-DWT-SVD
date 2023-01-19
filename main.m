@@ -828,7 +828,7 @@ title('Extracted Watermark Terdekripsi');
 %NC
 watermark = handles.ecw;
 ewatermark = handles.WMd;
-wm = double(ecw);
+wm = double(watermark);
 wm_ekstrak = double (ewatermark);
 n = length (wm);
 X = 0;
