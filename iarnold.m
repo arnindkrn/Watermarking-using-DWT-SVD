@@ -1,23 +1,23 @@
-function dw = iarnold(wm,m,key)
+function dw = iarnold (wm,m,key)
 dw = wm;
 for k = 1:key
     for i = 1:m
         for j = 1:m
-            x =2*i - j;
+            x = 2*i - j;
             y = j - i;
-            if(x > m)
+            if (x > m)
                 x = mod(x,m);
             end;
-            if(y > m)
+            if (y > m)
                 y = mod(y,m);
             end;
-            if(x <= 0)
+            if (x <= 0)
                 x = m + x;
             end;
-            if(y <= 0)
+            if (y <= 0)
                 y = m + y;
             end;
-            dw(x,y) = wm(i,j);
+            dw (x,y) = wm(i,j);
         end;
     end;
     wm = dw;
